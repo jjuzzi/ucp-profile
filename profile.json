@@ -1,0 +1,9 @@
+{
+  "name": "Hermes Shopping Agent",
+  "description": "Personal shopping agent for an authorized buyer",
+  "ucp": { "version": "2026-08-25" },
+  "services": ["dev.ucp.shopping"],
+  "capabilities": {
+    "dev.ucp.shopping": { "version": "2026-08-25" }
+  }
+}
