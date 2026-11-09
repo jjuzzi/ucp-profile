@@ -3,7 +3,11 @@
   "ucp": {
     "version": "2026-08-25"
   },
-  "services": [
-    "dev.ucp.shopping"
-  ]
+  "services": {
+    "dev.ucp.shopping": {
+      "version": "2026-08-25",
+      "transport": "mcp",
+      "endpoint": "https://store.rikoostenbroek.com/api/ucp/mcp"
+    }
+  }
 }
