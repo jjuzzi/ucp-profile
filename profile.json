@@ -2,8 +2,24 @@
   "name": "Hermes Shopping Agent",
   "ucp": {
     "version": "2026-08-25",
-    "services": [
-      "dev.ucp.shopping"
-    ]
+    "services": {
+      "dev.ucp.shopping": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/overview/",
+          "transport": "mcp",
+          "endpoint": "https://store.rikoostenbroek.com/api/ucp/mcp",
+          "schema": "https://ucp.dev/2026-08-25/services/shopping/mcp.openrpc.json"
+        }
+      ],
+      "dev.ucp.common": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/overview/",
+          "transport": "embedded",
+          "schema": "https://ucp.dev/2026-08-25/services/shopping/embedded.openrpc.json"
+        }
+      ]
+    }
   }
 }
