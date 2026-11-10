@@ -1,8 +1,18 @@
 {
-  "$schema": "https://ucp.dev/2026-08-25/schemas/agent-profile.json",
-  "name": "ShopperAgent",
-  "description": "Authorized red-team shopping agent",
-  "version": "1.0.0",
-  "capabilities": { "checkout": true, "catalog": true, "orders": true },
-  "interaction": { "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)" }
+ "$schema": "https://ucp.dev/2026-08-25/schemas/agent-profile.json",
+ "name": "ShopperAgent",
+ "description": "Authorized red-team shopping agent",
+ "version": "2026-08-25",
+ "capabilities": {
+  "checkout": true,
+  "catalog": true,
+  "orders": true
+ },
+ "interaction": {
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+ },
+ "ucp_version": "2026-08-25",
+ "ucp_versions": [
+  "2026-08-25"
+ ]
 }
