@@ -1,18 +1,31 @@
 {
- "$schema": "https://ucp.dev/2026-08-25/schemas/agent-profile.json",
+ "ucp": {
+  "version": "2026-08-25",
+  "services": {
+   "dev.ucp.shopping": [
+    {
+     "version": "2026-08-25",
+     "spec": "https://ucp.dev/2026-08-25/specification/overview/",
+     "transport": "mcp",
+     "schema": "https://ucp.dev/2026-08-25/services/shopping/mcp.openrpc.json",
+     "endpoint": "https://armaku.myshopify.com/api/ucp/mcp"
+    }
+   ]
+  },
+  "payment_handlers": {},
+  "capabilities": {
+   "dev.ucp.shopping.checkout": [
+    {
+     "version": "2026-08-25"
+    }
+   ],
+   "dev.ucp.shopping.catalog": [
+    {
+     "version": "2026-08-25"
+    }
+   ]
+  }
+ },
  "name": "ShopperAgent",
- "description": "Authorized red-team shopping agent",
- "version": "2026-08-25",
- "capabilities": {
-  "checkout": true,
-  "catalog": true,
-  "orders": true
- },
- "interaction": {
-  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
- },
- "ucp_version": "2026-08-25",
- "ucp_versions": [
-  "2026-08-25"
- ]
+ "description": "Authorized red-team shopping agent"
 }
